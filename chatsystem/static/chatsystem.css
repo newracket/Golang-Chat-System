@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.5rem;
+}
+
+#signin {
+  margin-top: 30vh;
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 0.5em;
+}
+
+#signinForm {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  width: 400px;
+  padding: 10px;
+  border-radius: 1em;
+  border: 1px solid black;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.submitButton {
+  margin-left: 20px;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 10px;
+  border-radius: 1em;
+  border: 1px solid gray;
+  font-weight: bold;
+  background-color: rgb(87, 209, 87);
+}
+
+#chatbox {
+  background-color: rgb(235, 235, 235);
+}
+
+.nav {
+  background-color: rgb(24, 172, 24);
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+h3 {
+  display: inline;
+  float: left;
+  margin-left: 25vw;
+}
+
+#signoutButton {
+  margin-left: auto;
+  margin-right: 25vw;
+  background-color: inherit;
+  color: inherit;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0;
+}
+
+.chatboxContainer {
+  margin: 0 20vw 0 20vw;
+  height: 95vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#messages {
+  flex: 1 0;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.message {
+  text-align: left;
+  margin-left: 20px;
+}
+
+#messageForm {
+  display: flex;
+}
+
+#messageToSend {
+  flex: 1 0 auto;
+  border-radius: 0;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}
+
+#sendMessageButton {
+  margin-left: 0;
+  border-radius: 0;
+  border: none;
+  padding: 0 2vw 0 2vw;
+}

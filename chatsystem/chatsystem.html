@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <style>
+
+  </style>
+
+  <link rel="stylesheet" href="./static/chatsystem.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="signin">
+    <h1>Welcome!</h1>
+    <h2>Please state your username below.</h2>
+
+    <form id="signinForm">
+      <input id="username" type="text" placeholder="username" autocomplete="off" required>
+      <button class="submitButton" id="signinButton">Sign In</button>
+    </form>
+  </div>
+
+  <div id="chatbox" style="display: none;">
+    <div class="nav">
+      <h3 id="nameBox"></h3>
+      <button id="signoutButton">Sign Out</button>
+    </div>
+
+    <div class="chatboxContainer">
+      <div id="messages"></div>
+      <form id="messageForm">
+        <input id="messageToSend" type="text" placeholder="Type your message here!" autocomplete="off" required />
+        <button class="submitButton" id="sendMessageButton">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="./static/chatsystem.js"></script>
+</body>
+
+</html>
